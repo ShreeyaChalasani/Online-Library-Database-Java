@@ -5,11 +5,11 @@ import java.util.Objects;
 public class Employee {
 
 
-	private String fname; 
-	private String lname;
-	private String name;
+	protected String fname; 
+	protected String lname;
+	protected String name;
 
-	private String employeeId;
+	protected String employeeId;
 	public static int nextemployeeNum=1;
 	
 	
