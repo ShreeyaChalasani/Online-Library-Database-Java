@@ -7,6 +7,12 @@ public class Finance {
 	private double funds;
 	
 	
+	public Finance(double bookPurchaseBudget, double employeeWages) {
+		super();
+		this.bookPurchaseBudget = bookPurchaseBudget;
+		this.employeeWages = employeeWages;
+		this.funds = bookPurchaseBudget + employeeWages;
+	}
 	public double getBookPurchaseBudget() {
 		return bookPurchaseBudget;
 	}
@@ -29,5 +35,9 @@ public class Finance {
 	public void decreaseFunds(double fundsToDecrease) {
 		funds -= fundsToDecrease;
 	}
+	public void addFunds(double fundsToAdd) {
+		funds += fundsToAdd;
+	}
+	
 	
 }

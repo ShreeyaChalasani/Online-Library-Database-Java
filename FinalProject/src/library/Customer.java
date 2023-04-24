@@ -36,15 +36,15 @@ public class Customer {
 		}
 		Book book = library.findBook(title);
 		if(book == null) {
-			System.out.println("Sorry, we do not have that title " + title + " in our library collection");
+			System.out.println("Sorry, we do not have that title " + title );
 			return false;
 		}
+		System.out.println("Checked out book " + title);
+
 		Checkout checkout = new Checkout(book);
 		checkouts[numberOfCheckouts]= checkout;
 		numberOfCheckouts++;
-		
-
-		
+		library.checkoutBook(book);//removes from hashset & hashmap
 		return true;
 	}
 	
@@ -57,7 +57,6 @@ public class Customer {
 			Checkout checkout = checkouts[i];
 			Book book = checkout.getBook(); 
 			if(book.getTitle().equals(title)) {
-				//Do nothing
 				//check if this is the book being returned
 				//see if late fees need to be charged
 				lateFees += checkout.calculateLateFee();
@@ -66,7 +65,11 @@ public class Customer {
 				newcheckouts[newCheckOutNums]= checkout;
 				newCheckOutNums++;
 			}
+			library.returnBook(book);//adds back to hashset & hashmap
+			System.out.println("Returned  book " + title);
+
 		}
+
 		checkouts = newcheckouts;
 		numberOfCheckouts = newCheckOutNums;// update number of checkouts by new counter
 		

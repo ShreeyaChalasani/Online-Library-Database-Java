@@ -7,6 +7,8 @@ public class Employee {
 
 	private String fname; 
 	private String lname;
+	private String name;
+
 	private String employeeId;
 	public static int nextemployeeNum=1;
 	
@@ -20,12 +22,25 @@ public class Employee {
 		this.fname = fname;
 		this.lname = lname;
 		this.employeeId = ""+ nextemployeeNum++;
+		this.name = lname + "," + fname;
 	}
 
 
 
 	public String getFname() {
 		return fname;
+	}
+
+
+
+	public String getName() {
+		return name;
+	}
+
+
+
+	public void setName(String name) {
+		this.name = name;
 	}
 
 

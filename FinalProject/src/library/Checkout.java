@@ -18,7 +18,7 @@ public class Checkout {
 		checkoutDate = LocalDate.now();
 		dueDate = checkoutDate.plusDays(10);
 		//THIS IS FOR TESTING REMOVE THIS. CALCULATE LATE FEE
-		dueDate = checkoutDate.plusDays(-20);
+		//dueDate = checkoutDate.plusDays(-20);
 		
 	}
 
@@ -26,7 +26,7 @@ public class Checkout {
 		
 		LocalDate currentDate = LocalDate.now();
 		
-		long days = ChronoUnit.DAYS.between(dueDate, currentDate);
+		long days = ChronoUnit.DAYS.between(currentDate, dueDate);
 		
 		if (days < 0) { 
 			return true;
