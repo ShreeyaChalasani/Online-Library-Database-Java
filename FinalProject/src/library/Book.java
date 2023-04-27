@@ -25,6 +25,18 @@ public class Book {
 			this.Id = Book.nextBookNum++;
 		}
 		
+		public Book(String title, String genre, String author) {
+			super();
+			this.title = title;
+			this.genre = genre;
+			this.author = author;
+			this.Id = Book.nextBookNum++;
+		}
+		public Book(String title) {
+			super();
+			this.title = title;
+			this.Id = Book.nextBookNum++;
+		}
 		public String getTitle() {
 			return title;
 		}

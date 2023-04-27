@@ -130,7 +130,7 @@ public class CustomerScenario {
 			Checkout checkout = checkouts[i];
 			Book book = checkout.getBook();
 			System.out.print(" title:" + book.getTitle());
-			System.out.print("  author:" + book.getAuthor());
+			System.out.print("  genre:" + book.getAuthor());
 
 			System.out.print(" checkoutDate:" + checkout.getCheckoutDate());
 			System.out.print(" dueDate:" + checkout.getDueDate());
