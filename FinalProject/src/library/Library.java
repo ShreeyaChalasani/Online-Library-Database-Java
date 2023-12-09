@@ -136,7 +136,6 @@ public class Library {
 		addBook("Complete Sherlock Holmes The - Vol II","Doyle Arthur Conan","fiction",40.0);
 		addBook("Wealth of Nations The","Smith Adam","economics",40.0);
 		addBook("Pillars of the Earth The","Follett Ken","fiction",40.0);
-		addBook("Mein Kampf","Hitler Adolf","nonfiction",40.0);
 		addBook("Tao of Physics The","Capra Fritjof","science",40.0);
 		addBook("Surely You're Joking Mr Feynman","Feynman Richard","science",40.0);
 		addBook("Farewell to Arms A","Hemingway Ernest","fiction",40.0);
@@ -269,20 +268,6 @@ public class Library {
 		addBook("Empire of the Mughal - Brothers at War","Rutherford Alex","history",40.0);
 		addBook("Empire of the Mughal - Ruler of the World","Rutherford Alex","history",40.0);
 		addBook("Empire of the Mughal - The Serpent's Tooth","Rutherford Alex","history",40.0);
-		addBook("Empire of the Mughal - Raiders from the North","Rutherford Alex","history",40.0);
-		addBook("Mossad","Baz-Zohar Michael","history",40.0);
-		addBook("Jim Corbett Omnibus","Corbett Jim","nonfiction",40.0);
-		addBook("20000 Leagues Under the Sea","Verne Jules","fiction",40.0);
-		addBook("Batatyachi Chal","Deshpande P L","fiction",40.0);
-		addBook("Hafasavnuk","Deshpande P L","fiction",40.0);
-		addBook("Urlasurla","Deshpande P L","fiction",40.0);
-		addBook("Pointers in C","Kanetkar Yashwant","computer_science",40.0);
-		addBook("Cathedral and the Bazaar The","Raymond Eric","computer_science",40.0);
-		addBook("Design with OpAmps","Franco Sergio","computer_science",40.0);
-		addBook("Think Complexity","Downey Allen","data_science",40.0);
-		addBook("Devil's Advocate The","West Morris","fiction",40.0);
-		addBook("Ayn Rand Answers","Rand Ayn","philosophy",40.0);
-		addBook("Philosophy: Who Needs It","Rand Ayn","philosophy",40.0);
 		addBook("World's Great Thinkers The","","philosophy",40.0);
 		addBook("Data Analysis with Open Source Tools","Janert Phillip","data_science",40.0);
 		addBook("Broca's Brain","Sagan Carl","science",40.0);
